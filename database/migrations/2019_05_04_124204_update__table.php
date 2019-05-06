@@ -13,6 +13,7 @@ class UpdateTable extends Migration
      */
     public function up()
     {
+        // Создадим заново таблицу
         Schema::table('bills', function (Blueprint $table) {
             Schema::dropIfExists('bills');
         });
