@@ -13,6 +13,9 @@ class UpdateTable extends Migration
      */
     public function up()
     {
+        Schema::table('bills', function (Blueprint $table) {
+            Schema::dropIfExists('bills');
+        });
         Schema::create('bills', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->bigInteger('number');
