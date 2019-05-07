@@ -26,8 +26,7 @@ class AuthTest extends TestCase
     public function testAuthSuccess(){
         $this->json('POST', '/auth', ['login' => 'zxc_off@mail.ru','password' => "salamandra"])
             ->assertJson([
-                'errorcode' => null,
-                'success' => true,
+                'response' => true,
             ]);
     }
 }

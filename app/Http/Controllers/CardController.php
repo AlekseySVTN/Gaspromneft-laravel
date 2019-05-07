@@ -11,6 +11,10 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Redis;
 
+/**
+ * Class CardController
+ * @package App\Http\Controllers
+ */
 class CardController extends APIBaseController
 {
 

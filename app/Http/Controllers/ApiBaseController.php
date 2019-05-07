@@ -7,7 +7,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller as Controller;
 
-
+/**
+ * Class APIBaseController
+ * @package App\Http\Controllers
+ */
 class APIBaseController extends Controller
 {
     const ERROR_CODE_SOMEERROR = 1;
@@ -29,7 +32,7 @@ class APIBaseController extends Controller
     ];
 
     /**
-     *
+     * Ответ по умолчанию
      * @return array
      */
     protected static function getDefaultResponseArray()

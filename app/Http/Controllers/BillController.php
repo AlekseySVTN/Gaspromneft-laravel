@@ -7,6 +7,10 @@ use Auth;
 use App\Bill;
 use Illuminate\Http\Request;
 
+/**
+ * Class BillController
+ * @package App\Http\Controllers
+ */
 class BillController extends APIBaseController
 {
     /**
